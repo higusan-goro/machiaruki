@@ -1327,11 +1327,11 @@ footer p { margin:.5rem 0; }
   var clickUrl = "https://script.google.com/macros/s/AKfycbzOaKVwX4sKfR6Ls2xt-E8q__aCWAPB2NVStK5eUPm0dCoHVvh-bL1xOSVJ_7UmmiZD0w/exec", issue = "2026-10-15";
   if (clickUrl && navigator.sendBeacon) {
     document.addEventListener('click', function (ev) {
-      var a = ev.target.closest && ev.target.closest('a.more, .act.line');
+      var a = ev.target.closest && ev.target.closest('a.more, .act');
       var c = a && a.closest('.card');
       if (!c || !c.dataset.no) return;
       var body = JSON.stringify({ action: 'click', issue: issue, no: Number(c.dataset.no),
-        kind: a.classList.contains('line') ? 'line' : 'more',
+        kind: a.dataset.act || 'more',
         where: c.closest('#pickup') ? 'pickup' : 'list', lang: en() ? 'en' : 'ja' });
       try { navigator.sendBeacon(clickUrl, new Blob([body], { type: 'text/plain' })); } catch (e) {}
     });
