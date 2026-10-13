@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- まちあるき便りのファビコン: 夜空の金華山と星(サイトの線画・色に合わせた)。2026-10-13 -->
+  <rect width="64" height="64" rx="14" fill="#26324d"/>
+  <path d="M4 52 C16 44 22 30 32 28 C42 30 48 44 60 52 Z" fill="#7fc0b8"/>
+  <path d="M0 50 Q16 46 32 50 T64 50 V64 H0 Z" fill="#2f7f86"/>
+  <path d="M0 55 Q16 52 32 55 T64 55" fill="none" stroke="#dcefef" stroke-width="2" stroke-linecap="round"/>
+  <path d="M44 7 L46.6 13.4 L53.4 13.9 L48.2 18.3 L49.9 25 L44 21.3 L38.1 25 L39.8 18.3 L34.6 13.9 L41.4 13.4 Z" fill="#e3ad3c"/>
+  <circle cx="17" cy="16" r="2" fill="#e3ad3c"/>
+</svg>
