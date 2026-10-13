@@ -47,8 +47,15 @@ h1, h2, h3, h4, .lead, .note, .blurb, .hoshidoki p, .form-box p { word-break:aut
 .wrap { max-width:1080px; margin:0 auto; padding:0 16px; }
 
 /* ---- ヘッダー ---- */
-.hero { text-align:center; padding:28px 0 8px; position:relative; }
-.topbar { display:flex; justify-content:flex-end; gap:8px; flex-wrap:wrap; }
+.hero { text-align:center; padding-block:28px 8px; position:relative; }
+.topbar { display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; }
+.topbar > div { display:flex; gap:8px; flex-wrap:wrap; }
+.topbar .tools { margin-left:auto; }
+.jump { display:inline-flex; align-items:center; gap:4px; font-size:.85rem; font-weight:700; text-decoration:none; border-radius:99px;
+  padding:8px 16px; min-height:44px; border:1.5px solid var(--kaki); color:var(--kaki-ink); background:var(--kaki-soft); }
+.jump.cafe { border-color:var(--line); color:var(--ink); background:var(--card); font-weight:400; }
+#form, #hoshidoki { scroll-margin-top:16px; }
+@media (prefers-reduced-motion:no-preference) { html { scroll-behavior:smooth; } }
 .size-toggle, .lang-toggle { font:inherit; font-size:.85rem; border:1.5px solid var(--line); background:var(--card); color:var(--ink);
   border-radius:99px; padding:8px 16px; min-height:44px; cursor:pointer; }
 .lang-toggle { font-weight:700; }
@@ -166,7 +173,7 @@ h1, h2, h3, h4, .lead, .note, .blurb, .hoshidoki p, .form-box p { word-break:aut
 .form-box { margin-top:22px; background:var(--card); border:1.5px dashed #e2c5ad; border-radius:22px; padding:24px 22px; text-align:center; }
 .form-box h2 { margin:4px 0 6px; font-size:1.3rem; color:var(--night); }
 .soon { color:var(--sub); }
-footer { margin-top:48px; padding:26px 0 56px; border-top:1px solid var(--line); color:var(--sub); font-size:.82rem; }
+footer { margin-top:48px; padding-block:26px 56px; border-top:1px solid var(--line); color:var(--sub); font-size:.82rem; }
 footer p { margin:.5rem 0; }
 @media (max-width:420px) { .card { padding:14px; gap:12px; } .dbadge { flex-basis:56px; height:66px; } }
 </style>
@@ -174,8 +181,14 @@ footer p { margin:.5rem 0; }
 <body>
 <header class="wrap hero">
   <div class="topbar">
+    <div class="jumps">
+    <a class="jump" href="#form"><span class="ja">情報提供はこちら</span><span class="en" lang="en">Share an event</span> <span aria-hidden="true">↓</span></a>
+    <a class="jump cafe" href="#hoshidoki"><span class="ja">喫茶星時</span><span class="en" lang="en">Our café</span> <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="tools">
     <button type="button" class="lang-toggle" id="langToggle" lang="en">English</button>
     <button type="button" class="size-toggle" id="sizeToggle" aria-pressed="false"><span class="ja">文字を大きく</span><span class="en" lang="en">Larger text</span></button>
+    </div>
   </div>
   <p class="issue"><span class="ja">10月15日号 ・ 10/15(木) 〜 11/14(土)</span><span class="en" lang="en">Oct 15 issue · Thu, Oct 15 – Sat, Nov 14</span></p>
   <h1 class="logo"><small class="logo-sub"><span class="ja">喫茶星時の</span><span class="en" lang="en">Kissa Hoshidoki&#x27;s</span></small><span class="logo-main"><span class="ja">まちあるき便り</span><span class="en" lang="en">Town Walk Letter</span></span></h1>
