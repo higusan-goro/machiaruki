@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://higusan-goro.github.io/machiaruki/sitemap.xml
+Sitemap: https://machiaruki.hoshidoki.com/sitemap.xml
