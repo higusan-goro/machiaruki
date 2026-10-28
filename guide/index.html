@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>はじめての方へ|喫茶星時のまちあるき便り</title>
+<meta name="description" content="岐阜の中心市街地のまちあるきガイド。岐阜駅周辺・柳ケ瀬・メディアコスモス・岐阜公園への行き方(岐阜バスの乗り場と降りるバス停)、駐車場の探し方、雨の日の確かめ方。">
+<meta name="theme-color" content="#fbf6ec">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://machiaruki.hoshidoki.com/guide/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="喫茶星時のまちあるき便り">
+<meta property="og:title" content="はじめての方へ|喫茶星時のまちあるき便り">
+<meta property="og:url" content="https://machiaruki.hoshidoki.com/guide/">
+<meta property="og:image" content="https://machiaruki.hoshidoki.com/og.png">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper:#fbf6ec; --card:#fffdf8; --ink:#2a3346; --sub:#5d6475; --line:#eadfcd;
+  --kaki:#d9673a; --kaki-deep:#b44f26; --kaki-ink:#9c4119; --kaki-soft:#fbe4d6;
+  --river:#2f7f86; --river-ink:#246c72; --river-soft:#dcefef; --gold:#e3ad3c; --night:#26324d;
+  --fs:17px;
+}
+:root.large { --fs:20px; }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; font-size:var(--fs); }
+body { margin:0; background:var(--paper); color:var(--ink); line-height:1.8; letter-spacing:.02em;
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif; font-weight:500; }
+a { color:var(--kaki-deep); }
+h1, h2, h3, p { word-break:auto-phrase; text-wrap:pretty; }
+:focus-visible { outline:3px solid var(--river); outline-offset:3px; border-radius:6px; }
+:root:not([data-lang="en"]) .en, :root[data-lang="en"] .ja { display:none !important; }
+:root[data-lang="en"] body { letter-spacing:0; }
+.wrap { max-width:760px; margin:0 auto; padding:0 16px; }
+.topbar { display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; padding-top:20px; }
+.topbar > div { display:flex; gap:8px; flex-wrap:wrap; }
+.back { display:inline-flex; align-items:center; min-height:44px; padding:8px 16px; border-radius:99px; font-size:.85rem;
+  font-weight:700; text-decoration:none; border:1.5px solid var(--kaki); color:var(--kaki-ink); background:var(--kaki-soft); }
+.size-toggle, .lang-toggle { font:inherit; font-size:.85rem; border:1.5px solid var(--line); background:var(--card); color:var(--ink);
+  border-radius:99px; padding:8px 16px; min-height:44px; cursor:pointer; }
+.lang-toggle { font-weight:700; }
+.size-toggle[aria-pressed="true"] { background:var(--night); color:#fff; border-color:var(--night); }
+header { text-align:center; padding-bottom:8px; }
+h1 { margin:22px 0 4px; font-family:"Kaisei Decol",serif; font-size:clamp(1.8rem,7vw,2.4rem); color:var(--night); letter-spacing:.1em; }
+.lead { max-width:32em; margin:8px auto 0; color:var(--sub); }
+.chips { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:18px 0 0; }
+.chip { display:inline-flex; align-items:center; min-height:44px; padding:8px 16px; border-radius:99px; font-size:.9rem;
+  text-decoration:none; color:var(--ink); background:var(--card); border:1.5px solid #d9c8b0; }
+h2 { margin:44px 0 14px; text-align:center; font-size:1.45rem; color:var(--night); }
+h2::after { content:""; display:block; width:44px; height:3px; border-radius:3px; background:var(--gold); margin:8px auto 0; }
+.area-box, .info { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px 18px 8px; margin:0 0 16px;
+  box-shadow:0 1px 2px rgba(60,40,20,.06),0 6px 18px rgba(60,40,20,.07); scroll-margin-top:12px; }
+.area-box h3 { margin:0 0 4px; font-size:1.2rem; color:var(--river-ink); }
+.area-box > p, .info p { margin:0 0 12px; }
+.how { border-top:1px dashed var(--line); padding:10px 0 6px; }
+.how h4 { margin:0; font-size:.85rem; color:var(--kaki-ink); letter-spacing:.1em; }
+.how p { margin:2px 0 6px; }
+.button { display:inline-flex; align-items:center; gap:6px; min-height:44px; margin:6px 0 10px; padding:8px 18px; border-radius:99px;
+  font-weight:700; font-size:.9rem; text-decoration:none; background:var(--kaki-deep); color:#fff; }
+.button.sub { background:var(--river-ink); }
+.info ul { margin:0 0 12px; padding-left:1.2em; }
+.as-of { text-align:center; font-size:.82rem; color:var(--sub); }
+footer { margin-top:40px; padding:22px 0 48px; border-top:1px solid var(--line); text-align:center; font-size:.85rem; color:var(--sub); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="topbar">
+  <div><a class="back" href="../"><span aria-hidden="true">←</span>&nbsp;<span class="ja">イベント一覧へ</span><span class="en" lang="en">Back to events</span></a></div>
+  <div>
+  <button type="button" class="lang-toggle" id="langToggle" lang="en">English</button>
+  <button type="button" class="size-toggle" id="sizeToggle" aria-pressed="false"><span class="ja">文字を大きく</span><span class="en" lang="en">Larger text</span></button>
+  </div>
+</div>
+<header>
+  <h1><span class="ja">はじめての方へ</span><span class="en" lang="en">First-time Guide</span></h1>
+  <p class="lead"><span class="ja">岐阜の中心市街地は、岐阜駅から北へ向かって、大きく4つのエリアに分かれています。エリアごとに、電車・バスでの行き方と、駐車場の探し方をまとめました。</span><span class="en" lang="en">Gifu&#x27;s city center stretches north from Gifu Station and can be divided into four areas. Here is how to get to each by train and bus, and how to find parking.</span></p>
+  <nav class="chips" aria-label="エリア"><a class="chip" href="#station"><span class="ja">岐阜駅周辺</span><span class="en" lang="en">Gifu Station area</span></a><a class="chip" href="#yanagase"><span class="ja">柳ケ瀬・金公園周辺</span><span class="en" lang="en">Yanagase / Kogane Park area</span></a><a class="chip" href="#mediacosmos"><span class="ja">メディアコスモス周辺</span><span class="en" lang="en">Media Cosmos area</span></a><a class="chip" href="#gifupark"><span class="ja">岐阜公園周辺</span><span class="en" lang="en">Gifu Park area</span></a><a class="chip" href="#other"><span class="ja">それ以外</span><span class="en" lang="en">Other areas</span></a></nav>
+</header>
+
+<main>
+<h2><span class="ja">エリアごとの行き方</span><span class="en" lang="en">Getting to each area</span></h2>
+<section class="area-box" id="station">
+  <h3><span class="ja">岐阜駅周辺</span><span class="en" lang="en">Gifu Station area</span></h3>
+  <p><span class="ja">JR岐阜駅・名鉄岐阜駅のまわり。駅前の広場や、駅のそばのビルで催しが開かれます。</span><span class="en" lang="en">Around JR Gifu and Meitetsu Gifu stations. Events are held in the station plaza and nearby buildings.</span></p>
+  <div class="how"><h4><span class="ja">歩いて</span><span class="en" lang="en">On foot</span></h4><p><span class="ja">駅から歩いてすぐです。</span><span class="en" lang="en">Just a short walk from the stations.</span></p></div>
+  
+  <div class="how"><h4><span class="ja">車で</span><span class="en" lang="en">By car</span></h4>
+  <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B2%90%E9%98%9C%E9%A7%85%20%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener"><span class="ja">周辺の駐車場を地図で見る</span><span class="en" lang="en">Find parking nearby (Google Maps)</span><span class="ext" aria-hidden="true">↗</span></a></div>
+</section><section class="area-box" id="yanagase">
+  <h3><span class="ja">柳ケ瀬・金公園周辺</span><span class="en" lang="en">Yanagase / Kogane Park area</span></h3>
+  <p><span class="ja">昔ながらのアーケード商店街「柳ケ瀬」と、金公園・岐阜市文化センターのあたり。喫茶星時もこのエリアにあります。</span><span class="en" lang="en">The traditional Yanagase arcade shopping street, Kogane Park and Gifu City Culture Center. Kissa Hoshidoki is in this area too.</span></p>
+  <div class="how"><h4><span class="ja">歩いて</span><span class="en" lang="en">On foot</span></h4><p><span class="ja">名鉄岐阜駅から北へ、柳ケ瀬まで歩いて約13分。</span><span class="en" lang="en">About a 13-minute walk north from Meitetsu Gifu Station to Yanagase.</span></p></div>
+  <div class="how"><h4><span class="ja">バスで</span><span class="en" lang="en">By bus</span></h4><p><span class="ja">JR岐阜駅の⑫・⑬番のりば、または名鉄岐阜の④番のりばから、「岐阜公園・長良橋」方面のバスに乗り、「柳ケ瀬」で降ります。金公園・文化センターへは、ひとつ手前の「徹明町」が便利です。</span><span class="en" lang="en">From JR Gifu bus stops 12 or 13, or Meitetsu Gifu stop 4, take a bus bound for Gifu Park / Nagarabashi and get off at &quot;Yanagase&quot;. For Kogane Park and the Culture Center, &quot;Tetsumeicho&quot; (one stop earlier) is closer.</span></p></div>
+  <div class="how"><h4><span class="ja">車で</span><span class="en" lang="en">By car</span></h4>
+  <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9F%B3%E3%82%B1%E7%80%AC%20%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener"><span class="ja">周辺の駐車場を地図で見る</span><span class="en" lang="en">Find parking nearby (Google Maps)</span><span class="ext" aria-hidden="true">↗</span></a></div>
+</section><section class="area-box" id="mediacosmos">
+  <h3><span class="ja">メディアコスモス周辺</span><span class="en" lang="en">Media Cosmos area</span></h3>
+  <p><span class="ja">図書館を中心にした「みんなの森 ぎふメディアコスモス」と、岐阜市役所・ぎふしんフォーラム(市民会館)のあたり。</span><span class="en" lang="en">Minna no Mori Gifu Media Cosmos (a library complex), Gifu City Hall and Gifushin Forum (Civic Hall).</span></p>
+  <div class="how"><h4><span class="ja">歩いて</span><span class="en" lang="en">On foot</span></h4><p><span class="ja">岐阜駅から歩くと約25分です。</span><span class="en" lang="en">About a 25-minute walk from Gifu Station.</span></p></div>
+  <div class="how"><h4><span class="ja">バスで</span><span class="en" lang="en">By bus</span></h4><p><span class="ja">JR岐阜駅の⑪番のりば、または名鉄岐阜の④番のりばから「市内ループ線 左まわり」に乗り、「岐阜市役所・メディアコスモス」で降りてすぐです(朝早い便は止まりません)。</span><span class="en" lang="en">From JR Gifu bus stop 11, or Meitetsu Gifu stop 4, take the &quot;City Loop Line (counterclockwise)&quot; and get off at &quot;Gifu City Hall / Media Cosmos&quot; (early-morning buses do not stop there).</span></p></div>
+  <div class="how"><h4><span class="ja">車で</span><span class="en" lang="en">By car</span></h4>
+  <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B2%90%E9%98%9C%E5%B8%82%E5%BD%B9%E6%89%80%20%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%82%B3%E3%82%B9%E3%83%A2%E3%82%B9%20%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener"><span class="ja">周辺の駐車場を地図で見る</span><span class="en" lang="en">Find parking nearby (Google Maps)</span><span class="ext" aria-hidden="true">↗</span></a></div>
+</section><section class="area-box" id="gifupark">
+  <h3><span class="ja">岐阜公園周辺</span><span class="en" lang="en">Gifu Park area</span></h3>
+  <p><span class="ja">金華山のふもとの岐阜公園、ロープウェーで登る岐阜城、長良川・川原町のあたり。</span><span class="en" lang="en">Gifu Park at the foot of Mt. Kinka, Gifu Castle (reached by ropeway), the Nagara River and the old Kawaramachi street.</span></p>
+  <div class="how"><h4><span class="ja">歩いて</span><span class="en" lang="en">On foot</span></h4><p><span class="ja">岐阜駅からはバスが便利です(約20分)。</span><span class="en" lang="en">From Gifu Station, the bus is easiest (about 20 minutes).</span></p></div>
+  <div class="how"><h4><span class="ja">バスで</span><span class="en" lang="en">By bus</span></h4><p><span class="ja">JR岐阜駅の⑫・⑬番のりば、または名鉄岐阜の④番のりばから、「岐阜公園・長良橋」方面のバスに乗り、「岐阜公園・岐阜城」で降ります(2025年4月に「岐阜公園歴史博物館前」から名前が変わりました)。長良川・川原町へは、次の「長良橋南・川原町」が便利です。</span><span class="en" lang="en">From JR Gifu bus stops 12 or 13, or Meitetsu Gifu stop 4, take a bus bound for Gifu Park / Nagarabashi and get off at &quot;Gifu Park / Gifu Castle&quot; (renamed in April 2025 from &quot;Gifu Park Historical Museum&quot;). For the Nagara River and Kawaramachi, the next stop &quot;Nagarabashi-minami / Kawaramachi&quot; is closer.</span></p></div>
+  <div class="how"><h4><span class="ja">車で</span><span class="en" lang="en">By car</span></h4>
+  <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B2%90%E9%98%9C%E5%85%AC%E5%9C%92%20%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener"><span class="ja">周辺の駐車場を地図で見る</span><span class="en" lang="en">Find parking nearby (Google Maps)</span><span class="ext" aria-hidden="true">↗</span></a></div>
+</section><section class="area-box" id="other">
+  <h3><span class="ja">それ以外の会場</span><span class="en" lang="en">Other venues</span></h3>
+  <p><span class="ja">県美術館・科学館や、中心市街地から離れた会場は、各イベントの「地図」ボタンで場所を確かめてください。バスの行き方は、岐阜バスの公式サイトで調べられます。</span><span class="en" lang="en">For the Prefectural Museum of Fine Arts, the Science Museum and venues outside the city center, check the location with each event&#x27;s Map button. Bus routes can be found on the Gifu Bus website.</span></p>
+</section>
+
+<h2><span class="ja">車で来る方へ</span><span class="en" lang="en">Coming by car</span></h2>
+<div class="info">
+  <ul>
+    <li><span class="ja">各エリアの「周辺の駐車場を地図で見る」を押すと、Googleマップでそのあたりの駐車場が表示されます。料金や空き状況は、それぞれの駐車場でご確認ください。</span><span class="en" lang="en">Each area&#x27;s &quot;Find parking nearby&quot; button shows car parks around it on Google Maps. Please check fees and availability at each car park.</span></li>
+    <li><span class="ja">大きな催しの日は、周辺の駐車場が混み合います。バスでのお出かけもご検討ください。</span><span class="en" lang="en">On days with big events, nearby car parks get crowded. Please consider taking the bus.</span></li>
+  </ul>
+</div>
+
+<h2><span class="ja">電車・バスで来る方へ</span><span class="en" lang="en">Coming by train and bus</span></h2>
+<div class="info">
+  <p><span class="ja">中心市街地へは、JR岐阜駅・名鉄岐阜駅から岐阜バスの路線バスが便利です。乗り場の番号は、上の各エリアに書いています。乗り場や時刻は変わることがあるので、お出かけ前に岐阜バスの公式サイトでご確認ください。</span><span class="en" lang="en">Gifu Bus route buses from JR Gifu and Meitetsu Gifu stations are the easiest way into the city center. Stop numbers are listed for each area above. Stops and timetables may change, so please check the Gifu Bus website before you go.</span></p>
+  <a class="button sub" href="https://www.gifubus.co.jp/rosen/noriba.html" target="_blank" rel="noopener"><span class="ja">岐阜駅の乗り場案内(岐阜バス)</span><span class="en" lang="en">Gifu Station bus stops (Gifu Bus)</span><span aria-hidden="true">↗</span></a>
+  <a class="button sub" href="https://www.gifubus.co.jp/" target="_blank" rel="noopener"><span class="ja">時刻・運賃を調べる(岐阜バス)</span><span class="en" lang="en">Timetables &amp; fares (Gifu Bus)</span><span aria-hidden="true">↗</span></a>
+</div>
+
+<h2><span class="ja">雨の日・中止のとき</span><span class="en" lang="en">Rain and cancellations</span></h2>
+<div class="info">
+  <ul>
+    <li><span class="ja">外で開かれる催しは、雨で中止・延期・会場変更になることがあります。カードの「時間」の欄に、雨の日の扱いを書いているものもあります。</span><span class="en" lang="en">Outdoor events may be cancelled, postponed or moved in the rain. Some cards note the rain plan in the Time field.</span></li>
+    <li><span class="ja">当日開かれるかどうかは、各イベントの「詳しく見る」から、主催者の案内でご確認ください。</span><span class="en" lang="en">To check whether an event is on that day, follow the Details link to the organizer&#x27;s page.</span></li>
+  </ul>
+</div>
+<p class="as-of"><span class="ja">バスの乗り場・バス停の名前は2026年10月時点の情報です。</span><span class="en" lang="en">Bus stop information is as of October 2026.</span></p>
+</main>
+
+<footer>
+  <p><a href="../"><span class="ja">今号のイベント一覧へ戻る</span><span class="en" lang="en">Back to this issue&#x27;s events</span></a></p>
+  <p>&copy; <span class="ja">喫茶星時</span><span class="en" lang="en">Kissa Hoshidoki</span></p>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  function en() { return root.dataset.lang === 'en'; }
+  var sizeToggle = document.getElementById('sizeToggle'), langToggle = document.getElementById('langToggle');
+  function sizeLabel() {
+    var on = root.classList.contains('large');
+    sizeToggle.textContent = on ? (en() ? 'Normal text' : '文字をもとに戻す') : (en() ? 'Larger text' : '文字を大きく');
+  }
+  function setLarge(on) { root.classList.toggle('large', on); sizeToggle.setAttribute('aria-pressed', on ? 'true' : 'false'); sizeLabel(); }
+  try { setLarge(localStorage.getItem('fontLarge') === '1'); } catch (e) {}
+  sizeToggle.addEventListener('click', function () {
+    var on = !root.classList.contains('large'); setLarge(on);
+    try { localStorage.setItem('fontLarge', on ? '1' : '0'); } catch (e) {}
+  });
+  // 言語はイベント一覧のページと同じ記憶を使う
+  function setLang(lang) {
+    root.dataset.lang = lang; root.lang = lang;
+    langToggle.textContent = lang === 'en' ? '日本語' : 'English';
+    langToggle.lang = lang === 'en' ? 'ja' : 'en'; sizeLabel();
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  setLang(saved || ((navigator.language || 'ja').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en'));
+  langToggle.addEventListener('click', function () {
+    var lang = en() ? 'ja' : 'en'; setLang(lang);
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  });
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "53438871544144f589b95ddc83a69c1b"}'></script>
+</body>
+</html>
